@@ -9,10 +9,11 @@ import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.phonepemoviesapp.R
 import com.example.phonepemoviesapp.model.Results
+import java.util.*
 
-class MovieAdapter(list: List<Results>, context: Context) : RecyclerView.Adapter<MovieViewHolder>() {
+class MovieAdapter(list:ArrayList<Results>, context: Context) : RecyclerView.Adapter<MovieViewHolder>() {
 
-    private var movieList: List<Results>? = null
+    private var movieList: ArrayList<Results>? = null
     private var mContext: Context? = null
     private var view: View? = null
 
